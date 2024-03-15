@@ -27,7 +27,7 @@ export default function Hero() {
               <span className="sr-only">Your Company</span>
               <Image
                 src="/logo.svg"
-                alt="Vercel Logo"
+                alt="Coding Nomad Logo"
                 className="dark:invert"
                 width={80}
                 height={14}
@@ -131,9 +131,9 @@ export default function Hero() {
                 Get Hired as a Software Developer in 2024
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Online course designed to help aspiring developers master the
+                art of <span className="italic font-medium">job hunt</span> and
+                secure their ideal role in today's competitive market
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
@@ -156,7 +156,6 @@ export default function Hero() {
                 className="w-full md:w-2/3 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
                 src="https://www.youtube.com/embed/PPMEKxfh9ZE?si=46jnV7AqeTsyV3PJ"
                 title="YouTube video player"
-                // frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>

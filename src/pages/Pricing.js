@@ -2,33 +2,31 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
-    name: "Hobby",
-    id: "tier-hobby",
+    name: "Standard Price",
+    id: "tier-full",
     href: "#",
-    priceMonthly: "$19",
-    description:
-      "The perfect plan if you're just getting started with our product.",
+    priceMonthly: "$250",
+    description: "Final price of the course once all modules are out.",
     features: [
-      "25 products",
-      "Up to 10,000 subscribers",
-      "Advanced analytics",
-      "24-hour support response time",
+      "3 Resume Templates",
+      "Real life project ideas",
+      "Free access to Coding Nomad community",
     ],
     featured: false,
   },
   {
-    name: "Enterprise",
-    id: "tier-enterprise",
+    name: "Early access",
+    id: "tier-early-bird",
     href: "#",
-    priceMonthly: "$49",
-    description: "Dedicated support and infrastructure for your company.",
+    priceMonthly: "$150",
+    description:
+      "Early bird access with a discounted price & special benefits.",
     features: [
-      "Unlimited products",
-      "Unlimited subscribers",
-      "Advanced analytics",
-      "Dedicated support representative",
-      "Marketing automations",
-      "Custom integrations",
+      "Early access",
+      "Opportunity to have a call with Coding Nomad",
+      "3 Resume Templates",
+      "Real life project ideas",
+      "Free access to Coding Nomad community",
     ],
     featured: true,
   },
@@ -62,8 +60,8 @@ export default function Pricing() {
         </p>
       </div>
       <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-        Qui iusto aut est earum eos quae. Eligendi est at nam aliquid ad quo
-        reprehenderit in aliquid fugiat dolorum voluptatibus.
+        Early access price is going to be available during limited time only.
+        Once all modules are out, the final price is going ot be $300.
       </p>
       <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
         {tiers.map((tier, tierIdx) => (
@@ -98,14 +96,6 @@ export default function Pricing() {
                 )}
               >
                 {tier.priceMonthly}
-              </span>
-              <span
-                className={classNames(
-                  tier.featured ? "text-gray-400" : "text-gray-500",
-                  "text-base"
-                )}
-              >
-                /month
               </span>
             </p>
             <p
@@ -142,11 +132,11 @@ export default function Pricing() {
               className={classNames(
                 tier.featured
                   ? "bg-violet-500 text-white shadow-sm hover:bg-violet-600 focus-visible:outline-violet-500"
-                  : "text-violet-500 ring-1 ring-inset ring-violet-200 hover:ring-violet-300 focus-visible:outline-violet-600",
+                  : "text-gray-500 ring-1 ring-inset ring-violet-200 hover:ring-gray-300 focus-visible:outline-gray-600",
                 "mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10"
               )}
             >
-              Get started today
+              {tier.featured ? `Get started today` : `Get started`}
             </a>
           </div>
         ))}
