@@ -5,7 +5,7 @@ const tiers = [
     name: "Standard Price",
     id: "tier-full",
     href: "#",
-    priceMonthly: "$250",
+    priceMonthly: "$170",
     description: "Final price of the course once all modules are out.",
     features: [
       "3 Resume Templates",
@@ -18,7 +18,7 @@ const tiers = [
     name: "Early access",
     id: "tier-early-bird",
     href: "#",
-    priceMonthly: "$150",
+    priceMonthly: "$89",
     description:
       "Early bird access with a discounted price & special benefits.",
     features: [

@@ -28,7 +28,7 @@ export default function Hero() {
               <Image
                 src="/logo.svg"
                 alt="Coding Nomad Logo"
-                className="dark:invert"
+                className="dark:invert text-indigo-600"
                 width={80}
                 height={14}
                 priority
@@ -132,8 +132,11 @@ export default function Hero() {
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Online course designed to help aspiring developers master the
-                art of <span className="italic font-medium">job hunt</span> and
-                secure their ideal role in today's competitive market
+                art of{" "}
+                <span className="italic font-medium text-indigo-700">
+                  job hunt
+                </span>{" "}
+                and secure their ideal role in today's competitive market
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a

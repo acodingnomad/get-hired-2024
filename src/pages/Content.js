@@ -1,16 +1,48 @@
-// import Image from "next/image";
+"use client"; // This is a client component 👈🏽
 
-const earlyAccessModules = [
-  { number: "1", description: "Dealing with imposter syndrome" },
-  { number: "2", description: "Writing a great resume 📄" },
-  { number: "3", description: "Building real projects for your portfolio" },
+import { Disclosure } from "@headlessui/react";
+import { PlusIcon, MinusIcon } from "@heroicons/react/20/solid";
+
+const faqs = [
+  {
+    question: "Module 1: Dealing with imposter syndrome",
+    available: true,
+    answer:
+      "Learn how to deal with imposter syndrome to succeed as a software developer",
+  },
+  {
+    question: "Module 2: Writing a great resume 📄",
+    available: true,
+    answer:
+      "Learn what to put on your resume as a beginner to get invited to more interviews",
+  },
+  {
+    question: "Module 3: Building real projects for your portfolio",
+    available: true,
+    answer:
+      "Build real life projects that will help you stand out and propell your job hunt",
+  },
+  {
+    question: "Module 4: Landing Interviews (coming soon)",
+    available: false,
+  },
+  {
+    question: "Module 5: Interview Preparation (coming soon)",
+    available: false,
+  },
+  {
+    question: "Module 6: Getting hired (coming soon)",
+    available: false,
+  },
+  {
+    question: "Module 7: Going remote 🌴 (coming soon)",
+    available: false,
+  },
 ];
-const comingSoonModules = [
-  { number: "4", description: "Landing Interviews" },
-  { number: "5", description: "Interview Preparation" },
-  { number: "6", description: "Getting hired" },
-  { number: "7", description: "Going remote & digital nomad lifestyle 🌴" },
-];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Content() {
   return (
@@ -18,19 +50,12 @@ export default function Content() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
+            {/* Switch to Next.js image */}
             <img
               className="inset-0 h-[32rem] w-full object-cover shadow-2xl rounded-3xl"
               src="/course-preview.png"
               alt="Coding Nomad course preview"
             />
-            {/* Switch to Next.js image */}
-            {/* <Image
-              src="/course-preview.png"
-              alt="Coding Nomad course preview"
-              width={300}
-              height={100}
-              className="inset-0  object-cover shadow-2xl rounded-3xl"
-            /> */}
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
@@ -39,26 +64,59 @@ export default function Content() {
               </h1>
               <div className="max-w-xl">
                 <div className="text-gray-900 mt-6">
-                  <p className="mb-4 text-base font-semibold leading-7 text-indigo-600">
+                  <p className="text-base font-semibold leading-7 text-indigo-600">
                     Course content
                   </p>
-                  <dl>
-                    {earlyAccessModules.map((module) => (
-                      <p className="mt-8" key={module.number}>
-                        Module {module.number}: {module.description}
-                      </p>
-                    ))}
-                  </dl>
-                </div>
-                <div className="text-gray-400 mt-6">
-                  <dl>
-                    {comingSoonModules.map((module, moduleIdx) => (
-                      <p className="mt-8" key={module.number}>
-                        Module {module.number}: {module.description}{" "}
-                        <span className="italic text-indigo-300">
-                          coming soon
-                        </span>
-                      </p>
+
+                  <dl className="space-y-4 divide-y divide-gray-900/10">
+                    {faqs.map((faq) => (
+                      <Disclosure as="div" key={faq.question} className="pt-6">
+                        {({ open }) => (
+                          <>
+                            <dt>
+                              <Disclosure.Button
+                                className={classNames(
+                                  !faq.answer && "cursor-default",
+                                  "flex w-full items-start justify-between text-left"
+                                )}
+                              >
+                                <span
+                                  className={classNames(
+                                    faq.available
+                                      ? "text-gray-800"
+                                      : "text-gray-400",
+                                    "leading-7 text-sm md:text-base"
+                                  )}
+                                >
+                                  {faq.question}
+                                </span>
+                                {faq.available && (
+                                  <span className="ml-6 flex h-7 items-center">
+                                    {open ? (
+                                      <MinusIcon
+                                        className="h-5 w-5 text-indigo-600"
+                                        aria-hidden="true"
+                                      />
+                                    ) : (
+                                      <PlusIcon
+                                        className="h-5 w-5 text-indigo-600"
+                                        aria-hidden="true"
+                                      />
+                                    )}
+                                  </span>
+                                )}
+                              </Disclosure.Button>
+                            </dt>
+                            {faq.answer && (
+                              <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                                <p className="text-base leading-7 text-gray-500">
+                                  {faq.answer}
+                                </p>
+                              </Disclosure.Panel>
+                            )}
+                          </>
+                        )}
+                      </Disclosure>
                     ))}
                   </dl>
                 </div>
