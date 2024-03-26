@@ -57,21 +57,15 @@ export default function Hero() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024"
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
                 </a>
-                <a
-                  href="#"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
               </div>
             </div>
 
-            <div className="mt-16 sm:mt-24 m-auto flex justify-center">
+            <div className="mt-16 sm:mt-20 m-auto flex justify-center">
               <iframe
                 className="w-full md:w-2/3 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
                 src="https://www.youtube.com/embed/PPMEKxfh9ZE?si=46jnV7AqeTsyV3PJ"

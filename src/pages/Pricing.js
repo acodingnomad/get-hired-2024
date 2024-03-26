@@ -17,7 +17,7 @@ const tiers = [
   {
     name: "Early access",
     id: "tier-early-bird",
-    href: "#",
+    href: "https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024",
     priceMonthly: "$89",
     description:
       "Early bird access with a discounted price & special benefits.",
@@ -132,7 +132,7 @@ export default function Pricing() {
               className={classNames(
                 tier.featured
                   ? "bg-violet-500 text-white shadow-sm hover:bg-violet-600 focus-visible:outline-violet-500"
-                  : "text-gray-500 ring-1 ring-inset ring-violet-200 hover:ring-gray-300 focus-visible:outline-gray-600",
+                  : "text-gray-500 ring-1 ring-inset cursor-default ring-violet-200 hover:ring-gray-300 focus-visible:outline-gray-600",
                 "mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10"
               )}
             >
