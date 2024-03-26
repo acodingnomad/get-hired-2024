@@ -9,18 +9,21 @@ const faqs = [
     available: true,
     answer:
       "Learn how to deal with imposter syndrome to succeed as a software developer",
+    plus: "to feel confident in your search",
   },
   {
-    question: "Module 2: Writing a great resume 📄",
+    question: "Module 2: Building real projects for your portfolio",
+    available: true,
+    answer:
+      "Build real projects that will help you stand out, enhance your experience and propell your career",
+    plus: "to stand out from the crowd",
+  },
+  {
+    question: "Module 3: Writing a great resume",
     available: true,
     answer:
       "Learn what to put on your resume as a beginner to get invited to more interviews",
-  },
-  {
-    question: "Module 3: Building real projects for your portfolio",
-    available: true,
-    answer:
-      "Build real life projects that will help you stand out and propell your job hunt",
+    plus: "to land more interviews 📄",
   },
   {
     question: "Module 4: Landing Interviews (coming soon)",
@@ -80,16 +83,20 @@ export default function Content() {
                                   "flex w-full items-start justify-between text-left"
                                 )}
                               >
-                                <span
+                                <p
                                   className={classNames(
                                     faq.available
-                                      ? "text-gray-800"
+                                      ? "text-gray-700"
                                       : "text-gray-400",
-                                    "leading-7 text-sm md:text-base"
+                                    "leading-7"
                                   )}
                                 >
-                                  {faq.question}
-                                </span>
+                                  {faq.question}{" "}
+                                  <span className="italic text-indigo-500 font-mono text-sm tracking-tight">
+                                    {faq.plus}
+                                  </span>
+                                </p>
+
                                 {faq.available && (
                                   <span className="ml-6 flex h-7 items-center">
                                     {open ? (
@@ -109,7 +116,7 @@ export default function Content() {
                             </dt>
                             {faq.answer && (
                               <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                                <p className="text-base leading-7 text-gray-500">
+                                <p className="leading-7 text-gray-500">
                                   {faq.answer}
                                 </p>
                               </Disclosure.Panel>

@@ -5,11 +5,29 @@ import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Who is this course for?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "This course is designed for aspiring software developers, whether you're fresh out of a coding bootcamp, a recent computer science graduate, or self-taught, looking to land your first job in the tech industry. If you want to improve your resume, portfolio, and interview skills to secure more job interviews and offers, this course is for you.",
   },
-  // More questions...
+  {
+    question: "Does this course teaches how to code?",
+    answer: "No, this course doesn't teach coding skills.",
+  },
+  {
+    question: "What will I learn in this course?",
+    answer:
+      "You'll learn how to create a compelling resume and portfolio that stand out to tech recruiters and hiring managers. We'll also cover essential interview preparation techniques, ensuring you're fully equipped to impress in any interview scenario.",
+  },
+  {
+    question: "How long does the course take to complete?",
+    answer:
+      "The course is self-paced, but most students complete it within 4 to 6 weeks, dedicating a few hours each week to watch the videos, complete homework, and participate in mock interviews.",
+  },
+  {
+    question: "Do I need any prior experience before taking this course?",
+    answer:
+      "While no specific prior experience is required, it's beneficial to have a basic understanding of software development principles and some coding experience to make the most of the course content, especially for portfolio development and technical interviews.",
+  },
 ];
 
 export default function Questions() {

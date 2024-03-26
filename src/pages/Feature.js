@@ -9,25 +9,25 @@ const features = [
   {
     name: "Resume makeover",
     description:
-      "Learn how to tell if your resume is bad and discover the reality of the job application process.",
+      "Learn how to write an effective resume (even as a beginner without experience) that catches attention and lands more interviews.",
     icon: DocumentTextIcon,
   },
   {
     name: "Build real-life projects",
     description:
-      "Build real-life meaningful projects that will help you stand out and accelerate your career.",
+      "Build real projects that will help you stand out, enhance your experience and propell your career.",
     icon: CodeBracketIcon,
   },
   {
     name: "Land more interviews",
     description:
-      "Master new networking application tactics to get invited to interviews.",
+      "Master latest networking & job application tactics to get invited to more interviews and build your connections.",
     icon: BoltIcon,
   },
   {
-    name: "Prepare & pass interviews easier",
+    name: "Prepare for interviews easier",
     description:
-      "Assess your level and create a studying plan following the best practices to save time & pass more interviews.",
+      "Assess your level and create a studying plan following the best practices to save time & pass interviews easier.",
     icon: CheckCircleIcon,
   },
 ];
@@ -44,7 +44,7 @@ export default function Feature() {
             Everything you need to land your next software engineering job
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Learn about common beginner mistakes to land your ideal job{" "}
+            Avoid common beginner mistakes to land your ideal job faster{" "}
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

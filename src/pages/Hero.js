@@ -126,17 +126,18 @@ export default function Hero() {
         </div>
         <div className="py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Get Hired as a Software Developer in 2024
+            <div className="mx-auto max-w-3xl text-center">
+              <h1 className="text-4xl font-bold tracking-tight sm:leading-snug text-gray-900 sm:text-6xl">
+                The Developer's Guide to Landing Your Dream Job
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Online course designed to help aspiring developers master the
-                art of{" "}
-                <span className="italic font-medium text-indigo-700">
-                  job hunt
-                </span>{" "}
-                and secure their ideal role in today's competitive market
+                Learn how to make your resume and portfolio stand out, ace
+                interviews, and beat the competition. Start your journey to a
+                great job in the tech with{" "}
+                <span className="font-medium text-indigo-700">
+                  Coding Nomad
+                </span>
+                .
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
