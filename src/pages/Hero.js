@@ -128,7 +128,7 @@ export default function Hero() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl font-bold tracking-tight sm:leading-snug text-gray-900 sm:text-6xl">
-                The Developer's Guide to Landing Your Dream Job
+                {`The Developer's Guide to Landing Your Dream Job`}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Learn how to make your resume and portfolio stand out, ace
