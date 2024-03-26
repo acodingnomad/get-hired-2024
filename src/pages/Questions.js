@@ -45,9 +45,9 @@ export default function Questions() {
                       </span>
                       <span className="ml-6 flex h-7 items-center">
                         {open ? (
-                          <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                          <MinusIcon className="h-5 w-5" aria-hidden="true" />
                         ) : (
-                          <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                          <PlusIcon className="h-5 w-5" aria-hidden="true" />
                         )}
                       </span>
                     </Disclosure.Button>
