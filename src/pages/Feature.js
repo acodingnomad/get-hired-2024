@@ -3,19 +3,20 @@ import {
   CodeBracketIcon,
   BoltIcon,
   CheckCircleIcon,
-} from "@heroicons/react/24/outline";
+  BriefcaseIcon,
+} from "@heroicons/react/24/solid";
 
 const features = [
   {
-    name: "Resume makeover",
+    name: "Resume, GitHub, and LinkedIn makeover",
     description:
-      "Learn how to write an effective resume (even as a beginner without experience) that catches attention and lands more interviews.",
+      "Learn how to write an effective resume (even as a beginner without experience), optimize your GitHub and LinkedIn to land more interviews.",
     icon: DocumentTextIcon,
   },
   {
-    name: "Build real-life projects",
+    name: "Build real-life projects for your portfolio",
     description:
-      "Build real projects that will help you stand out, enhance your experience and propell your career.",
+      "Learn what projects to build to stand out, enhance your experience and propell your career.",
     icon: CodeBracketIcon,
   },
   {
@@ -47,18 +48,18 @@ export default function Feature() {
             Avoid common beginner mistakes to land your ideal job faster{" "}
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div className="mx-auto mt-10 max-w-2xl sm:mt-20 lg:max-w-4xl">
+          <dl className="grid max-w-2xl grid-cols-1  gap-y-6">
             {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
+              <div key={feature.name} className="relative pl-14">
+                <dt className="md:text-md font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
                     <feature.icon
-                      className="h-6 w-6 text-black"
+                      className="h-7 w-7 text-green-600"
                       aria-hidden="true"
                     />
                   </div>
-                  {feature.name}
+                  <p>{feature.name}</p>
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-600">
                   {feature.description}

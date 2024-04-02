@@ -12,10 +12,10 @@ const faqs = [
     plus: "to feel confident in your search",
   },
   {
-    question: "Module 2: Building real projects for your portfolio",
+    question: "Module 2: Perfecting your portfolio",
     available: true,
     answer:
-      "Build real projects that will help you stand out, enhance your experience and propell your career",
+      "Build real projects that will help you stand out, enhance your experience, and propel your career",
     plus: "to stand out from the crowd",
   },
   {
@@ -30,7 +30,7 @@ const faqs = [
     available: false,
   },
   {
-    question: "Module 5: Interview Preparation (coming soon)",
+    question: "Module 5: Interview Strategy (coming soon)",
     available: false,
   },
   {
@@ -68,7 +68,7 @@ export default function Content() {
               <div className="max-w-xl">
                 <div className="text-gray-900 mt-6">
                   <p className="text-base font-semibold leading-7 text-indigo-600">
-                    Course content
+                    Course syllabus
                   </p>
 
                   <dl className="space-y-4 divide-y divide-gray-900/10">

@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "What will I learn in this course?",
-    answer: `You'll learn how to create a compelling resume and portfolio that stand out to tech recruiters and hiring managers. We'll also cover essential interview preparation techniques, ensuring you're fully equipped to impress in any interview scenario.`,
+    answer: `You'll learn how to create a compelling resume and portfolio that stands out to tech recruiters and hiring managers. We'll also cover essential interview preparation techniques, ensuring you're fully equipped to impress in any interview scenario.`,
   },
   {
     question: "How long does the course take to complete?",
@@ -23,6 +23,10 @@ const faqs = [
   {
     question: "Do I need any prior experience before taking this course?",
     answer: `While no specific prior experience is required, it's beneficial to have a basic understanding of software development principles and some coding experience to make the most of the course content, especially for portfolio development and technical interviews.`,
+  },
+  {
+    question: `What’s the refund policy?`,
+    answer: `If you don't think it was worth it, contact me within the first 30 days and I will provide a full refund.`,
   },
 ];
 
