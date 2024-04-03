@@ -16,7 +16,7 @@ export default function Hero() {
               <Image
                 src="/logo.svg"
                 alt="Coding Nomad Logo"
-                className="dark:invert text-indigo-600"
+                className="text-indigo-600"
                 width={80}
                 height={14}
                 priority
@@ -25,7 +25,6 @@ export default function Hero() {
           </div>
         </nav>
       </header>
-
       {/* Hero section */}
       <div className="relative pt-14">
         <div
@@ -40,7 +39,7 @@ export default function Hero() {
             }}
           />
         </div>
-        <div className="py-24 sm:py-32">
+        <div className="py-16 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-3xl font-bold tracking-tight leading-snug sm:leading-snug text-gray-900 sm:text-6xl">
@@ -49,7 +48,7 @@ export default function Hero() {
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Learn how to make your resume and portfolio stand out, ace
                 interviews, and beat the competition. Start your journey to a
-                great job in the tech with{" "}
+                great job in tech with{" "}
                 <span className="font-medium text-indigo-700">
                   Coding Nomad
                 </span>

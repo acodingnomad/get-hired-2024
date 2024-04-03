@@ -1,5 +1,6 @@
 "use client"; // This is a client component 👈🏽
 
+import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { PlusIcon, MinusIcon } from "@heroicons/react/20/solid";
 
@@ -49,21 +50,22 @@ function classNames(...classes) {
 
 export default function Content() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
-            {/* Switch to Next.js image */}
-            <img
-              className="inset-0 h-[32rem] w-full object-cover shadow-2xl rounded-3xl"
-              src="/course-preview.png"
-              alt="Coding Nomad course preview"
+            <Image
+              src="https://plus.unsplash.com/premium_photo-1705091981490-cf19b2167faf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className="rounded-3xl shadow-2xl"
             />
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <h1 className="text-3xl font-bold tracking-tight  sm:text-4xl">
-                On a mission to empower software developers
+              <h1 className="text-2xl font-bold tracking-tight  sm:text-4xl">
+                On a mission to empower aspiring developers
               </h1>
               <div className="max-w-xl">
                 <div className="text-gray-900 mt-6">
@@ -92,7 +94,7 @@ export default function Content() {
                                   )}
                                 >
                                   {faq.question}{" "}
-                                  <span className="italic text-indigo-500 font-mono text-sm tracking-tight">
+                                  <span className="italic text-indigo-500 font-mono text-[0.89rem] tracking-tight">
                                     {faq.plus}
                                   </span>
                                 </p>

@@ -2,14 +2,14 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
-    name: "Full Price",
+    name: "Final Price",
     id: "tier-full",
     href: "#",
-    priceMonthly: "$170",
+    priceMonthly: "$160",
     description: "Final price of the course once all modules are released.",
     features: [
       "3 Resume Templates",
-      "Real-life project ideas",
+      "Interview Prep Kit",
       "Free access to the Coding Nomad community",
     ],
     featured: false,
@@ -22,10 +22,9 @@ const tiers = [
     description:
       "Early bird access with a discounted price & special benefits.",
     features: [
-      "Early access",
       "Opportunity to have a call with Coding Nomad",
       "3 Resume Templates",
-      "Real-life project ideas",
+      "Interview Prep Kit",
       "Free access to the Coding Nomad community",
     ],
     featured: true,
@@ -38,7 +37,7 @@ function classNames(...classes) {
 
 export default function Pricing() {
   return (
-    <div className="relative isolate mt-32 bg-white px-6 sm:mt-56 lg:px-8">
+    <div className="relative isolate py-16 sm:py-32 bg-white px-6 lg:px-8">
       <div
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
         aria-hidden="true"
@@ -69,8 +68,8 @@ export default function Pricing() {
             key={tier.id}
             className={classNames(
               tier.featured
-                ? "relative bg-gray-900 shadow-2xl"
-                : "bg-white/60 sm:mx-8 lg:mx-0",
+                ? "relative bg-gray-900 shadow-2xl order-1 md:order-2"
+                : "bg-white/60 sm:mx-8 lg:mx-0 order-2 md:order-1",
               tier.featured
                 ? ""
                 : tierIdx === 0
