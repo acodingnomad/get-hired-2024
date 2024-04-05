@@ -1,34 +1,27 @@
-import {
-  DocumentTextIcon,
-  CodeBracketIcon,
-  BoltIcon,
-  ComputerDesktopIcon,
-} from "@heroicons/react/24/solid";
-
 const features = [
   {
-    name: "Resume, GitHub, and LinkedIn makeover",
+    name: "Perfect your resume, GitHub, and LinkedIn",
     description:
       "Learn how to write an effective resume (even as a beginner without experience), optimize your GitHub and LinkedIn to land more interviews.",
-    icon: DocumentTextIcon,
+    number: "1",
   },
   {
     name: "Build real-life projects for your portfolio",
     description:
       "Learn what projects to build to stand out, enhance your experience and propell your career.",
-    icon: CodeBracketIcon,
+    number: "2",
   },
   {
     name: "Land more interviews",
     description:
       "Master latest networking & job application tactics to get invited to more interviews and build your connections.",
-    icon: BoltIcon,
+    number: "3",
   },
   {
-    name: "Prepare for interviews easier",
+    name: "Get an offer",
     description:
-      "Assess your level and create a studying plan following the best practices to save time & pass interviews easier.",
-    icon: ComputerDesktopIcon,
+      "Prepare for interviews following the best practices to save time & land your next offer faster.",
+    number: "4",
   },
 ];
 
@@ -52,11 +45,10 @@ export default function Feature() {
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-14">
                 <dt className="font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
-                    <feature.icon
-                      className="h-7 w-7 text-green-600"
-                      aria-hidden="true"
-                    />
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-green-600">
+                    <p className="italic text-green-600 font-mono sm:text-xl tracking-tight">
+                      {feature.number}
+                    </p>
                   </div>
                   <p>{feature.name}</p>
                 </dt>
