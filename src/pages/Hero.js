@@ -46,16 +46,14 @@ export default function Hero() {
                 {`The Developer's Guide to Landing Your Next Job`}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Learn how to make your resume and portfolio stand out, ace
-                interviews, and beat the competition. Start your journey to a
-                great job in tech with{" "}
+                Learn how to make your resume stand out, ace interviews, and
+                beat the competition in this new{" "}
                 <span className="font-medium text-indigo-700">
-                  Coding Nomad
+                  masterclass:
                 </span>
-                .
               </p>
             </div>
-            <div className="mt-16 m-auto flex justify-center">
+            <div className="mt-10 sm:mt-16 m-auto flex justify-center">
               <iframe
                 className="w-full md:w-2/3 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
                 src="https://www.youtube.com/embed/PPMEKxfh9ZE?si=46jnV7AqeTsyV3PJ"
