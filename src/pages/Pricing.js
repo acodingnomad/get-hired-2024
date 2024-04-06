@@ -5,7 +5,7 @@ const tiers = [
     name: "Full Price",
     id: "tier-full",
     href: "https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024",
-    priceMonthly: "$160",
+    priceMonthly: "$178",
     description: "Final price of the course once all modules are released.",
     features: [
       "3 Resume Templates",
@@ -39,7 +39,7 @@ function classNames(...classes) {
 
 export default function Pricing() {
   return (
-    <div className="relative isolate py-16 sm:py-32 bg-white px-6 lg:px-8">
+    <div className="relative isolate py-16 sm:py-24 bg-white px-6 lg:px-8">
       <div
         className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
         aria-hidden="true"

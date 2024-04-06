@@ -27,14 +27,11 @@ const features = [
 
 export default function Feature() {
   return (
-    <div className="py-16 sm:py-32">
+    <div className="py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Get hired faster
-          </h2>
           <p className="mt-2 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">
-            Everything you need to land your next software engineering job
+            On a mission to empower aspiring developers{" "}
           </p>
           <p className="mt-3 sm:mt-6 sm:text-lg leading-8 text-gray-600">
             Avoid common beginner mistakes to land your ideal job faster{" "}

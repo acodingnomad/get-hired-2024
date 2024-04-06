@@ -39,7 +39,7 @@ export default function Hero() {
             }}
           />
         </div>
-        <div className="py-16 sm:py-32">
+        <div className="py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-3xl font-bold tracking-tight leading-snug sm:leading-snug text-gray-900 sm:text-6xl">
@@ -64,14 +64,17 @@ export default function Hero() {
                 allowFullScreen
               ></iframe>
             </div>
-            {/* <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md h-10 w-72 text-center bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                Enroll for $89
               </a>
-            </div> */}
+            </div>
+            <p className="text-center mt-3 text-rose-600 italic">
+              Save 50% with early bird access
+            </p>
           </div>
         </div>
         <div
