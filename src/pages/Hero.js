@@ -67,7 +67,7 @@ export default function Hero() {
                 href="https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024"
                 className="rounded-md h-10 w-72 text-center bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Enroll for $89
+                Sign up for $89
               </a>
             </div>
             <p className="text-center mt-3 text-rose-600 italic">

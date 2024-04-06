@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "How long does the course take to complete?",
-    answer: `The course is self-paced, but most students complete it within 4 to 6 weeks, dedicating a few hours each week to watch the videos, complete homework, and participate in mock interviews.`,
+    answer: `The course is self-paced, but most students complete it within 4 to 6 weeks, dedicating a few hours each week to watch the videos and complete homework.`,
   },
   {
     question: "Do I need any prior experience before taking this course?",
