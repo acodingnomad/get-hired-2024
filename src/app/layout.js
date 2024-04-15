@@ -10,7 +10,7 @@ export const metadata = {
   title: "Get Hired with Coding Nomad",
   description: "The Developer's Guide to Landing Your Next Job",
   openGraph: {
-    images: "get-hired-2024.vercel.app/public/og.jpg",
+    images: "https://get-hired-2024.vercel.app/public/og.png",
   },
 };
 
