@@ -69,6 +69,14 @@ export default function Example() {
             </a>
           ))}
         </div>
+        <div className="flex justify-center mt-8 md:mt-0">
+          <a
+            href="/policy"
+            className="text-center text-xs leading-5 text-gray-500 underline"
+          >
+            Privacy policy
+          </a>
+        </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
             &copy; 2024 Coding Nomad, Inc. All rights reserved.
