@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "../../public/og.png",
+        url: "icon.png",
       },
     ],
     siteName: "coding-nomad.dev",
