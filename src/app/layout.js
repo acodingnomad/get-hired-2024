@@ -10,7 +10,11 @@ export const metadata = {
   title: "Get Hired with Coding Nomad",
   description: "The Developer's Guide to Landing Your Next Job",
   openGraph: {
-    images: "https://get-hired-2024.vercel.app/public/og.png",
+    images:
+      "https://get-hired-2024-hx5rd2qo2-khristina-sheers-projects.vercel.app/public/og.png",
+    siteName: "coding-nomad.dev",
+    locale: "en_US",
+    type: "website",
   },
 };
 
