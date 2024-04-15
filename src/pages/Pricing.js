@@ -5,7 +5,7 @@ const tiers = [
     name: "Full Price",
     id: "tier-full",
     href: "https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024",
-    priceMonthly: "$178",
+    priceMonthly: "$169",
     description: "Final price of the course once all modules are released.",
     features: [
       "3 Resume Templates",
@@ -19,7 +19,7 @@ const tiers = [
     name: "Early access",
     id: "tier-early-bird",
     href: "https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024",
-    priceMonthly: "$89",
+    priceMonthly: "$84",
     description:
       "Early bird access with a discounted price & special benefits.",
     features: [
@@ -62,7 +62,7 @@ export default function Pricing() {
       </div>
       <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
         Early access price is going to be available for a limited time only.
-        Once all modules are out, the final price is going to be $160.
+        Once all modules are out, the final price is going to be $169.
       </p>
       <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
         {tiers.map((tier, tierIdx) => (

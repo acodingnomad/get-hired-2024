@@ -7,8 +7,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Get Hired as a SWE",
-  description: "Online course by Coding Nomad",
+  title: "Get Hired with Coding Nomad",
+  description: "The Developer's Guide to Landing Your Next Job",
+  openGraph: {
+    images: "../../public/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

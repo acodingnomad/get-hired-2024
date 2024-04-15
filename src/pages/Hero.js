@@ -70,7 +70,7 @@ export default function Hero() {
                 Sign up for $89
               </a>
             </div>
-            <p className="text-center mt-3 text-rose-600 italic">
+            <p className="text-center text-sm sm:text-base mt-3 text-rose-600 italic">
               Save 50% with early bird access
             </p>
           </div>
