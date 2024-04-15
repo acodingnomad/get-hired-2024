@@ -8,16 +8,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Get Hired with Coding Nomad",
-  description: "The Developer's Guide to Landing Your Next Job",
   openGraph: {
+    description:
+      "Learn how to stand out and ace interviews as a Software Developer in 2024",
     images: [
       {
         url: "https://get-hired-2024.vercel.app/og.png",
       },
     ],
-    siteName: "coding-nomad.dev",
-    locale: "en_US",
-    type: "website",
   },
 };
 
