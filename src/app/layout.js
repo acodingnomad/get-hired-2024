@@ -9,16 +9,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Get Hired with Coding Nomad",
   description: "The Developer's Guide to Landing Your Next Job",
-  // openGraph: {
-  //   images: [
-  //     {
-  //       url: "icon.png",
-  //     },
-  //   ],
-  //   siteName: "coding-nomad.dev",
-  //   locale: "en_US",
-  //   type: "website",
-  // },
+  openGraph: {
+    images: [
+      {
+        url: "https://get-hired-2024.vercel.app/og.png",
+      },
+    ],
+    siteName: "coding-nomad.dev",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
