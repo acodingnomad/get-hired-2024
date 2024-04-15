@@ -10,7 +10,11 @@ export const metadata = {
   title: "Get Hired with Coding Nomad",
   description: "The Developer's Guide to Landing Your Next Job",
   openGraph: {
-    images: "../../public/og.png",
+    images: [
+      {
+        url: "../../public/og.png",
+      },
+    ],
     siteName: "coding-nomad.dev",
     locale: "en_US",
     type: "website",
