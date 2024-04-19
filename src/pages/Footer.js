@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const navigation = [
   {
     name: "Instagram",
@@ -70,12 +72,12 @@ export default function Example() {
           ))}
         </div>
         <div className="flex justify-center mt-8 md:mt-0">
-          <a
+          <Link
             href="/policy"
             className="text-center text-xs leading-5 text-gray-500 underline"
           >
             Privacy policy
-          </a>
+          </Link>
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
