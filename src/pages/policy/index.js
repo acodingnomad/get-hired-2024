@@ -150,7 +150,7 @@ export default function Policy() {
           </p>
           <p className="mt-6">
             <span className="font-bold">Location Data: </span>
-            We collect location data such as information about your device's
+            {`We collect location data such as information about your device's
             location, which can be either precise or imprecise. The amount of
             information we collect depends on the type and settings of the
             device you use to access our Services. For example, we may use GPS
@@ -159,7 +159,7 @@ export default function Policy() {
             allowing us to collect this information either by refusing access to
             the information or by disabling your location setting on your
             device. However, if you choose to opt out, you may not be able to
-            use certain aspects of our Services.
+            use certain aspects of our Services.`}
           </p>
         </div>
         <div className="mt-12 max-w-2xl">
@@ -196,10 +196,10 @@ export default function Policy() {
           </p>
           <p className="mt-6">
             <span className="font-bold">
-              To save or protect an individual's vital interest.{" "}
+              {`To save or protect an individual's vital interest.`}{" "}
             </span>
-            We may process your information when necessary to save or protect an
-            individual’s vital interest, such as to prevent harm.
+            {`We may process your information when necessary to save or protect an
+            individual’s vital interest, such as to prevent harm.`}
           </p>
         </div>
         <div className="mt-12 max-w-2xl">
@@ -210,7 +210,7 @@ export default function Policy() {
             <span className="font-bold">
               Vendors, Consultants, and Other Third-Party Service Providers.{" "}
             </span>
-            We may share your data with third-party vendors, service providers,
+            {`We may share your data with third-party vendors, service providers,
             contractors, or agents ("third parties") who perform services for us
             or on our behalf and require access to such information to do that
             work. We have contracts in place with our third parties, which are
@@ -220,7 +220,7 @@ export default function Policy() {
             personal information with any organization apart from us. They also
             commit to protecting the data they hold on our behalf and to retain
             it for the period we instruct. The third parties we may share
-            personal information with are as follows:
+            personal information with are as follows:`}
           </p>
           <p className="font-bold mt-6"> ConvertKit (ConvertKit LLC) </p>
           <p className="mt-6">
