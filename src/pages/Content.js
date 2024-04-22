@@ -55,7 +55,7 @@ export default function Content() {
         <div className="mx-auto grid justify-items-center max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
             <Image
-              src="https://images.unsplash.com/photo-1573496800440-5c9c48a8d0f0?q=80&w=3688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1594892185343-0241e1d47d15?q=80&w=3370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD"
               width={500}
               height={500}
               alt="Picture of the author"
@@ -63,13 +63,13 @@ export default function Content() {
             />
           </div>
           <div>
-            <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
+            <div className="text-base leading-7 text-gray-800 lg:max-w-lg">
               <h1 className="text-2xl font-bold tracking-tight  sm:text-4xl">
                 On a mission to empower aspiring developers
               </h1>
               <div className="max-w-xl">
                 <div className="text-gray-900 mt-6">
-                  <p className="text-base font-semibold leading-7 text-indigo-600">
+                  <p className="text-base font-semibold leading-7 text-black">
                     Course syllabus
                   </p>
 
@@ -88,8 +88,8 @@ export default function Content() {
                                 <p
                                   className={classNames(
                                     faq.available
-                                      ? "text-gray-700"
-                                      : "text-gray-400",
+                                      ? "text-gray-800"
+                                      : "text-gray-800",
                                     "leading-7"
                                   )}
                                 >

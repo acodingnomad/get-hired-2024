@@ -5,7 +5,7 @@ import { CheckCircleIcon, ArrowLeftIcon } from "@heroicons/react/20/solid";
 export default function Policy() {
   return (
     <div className="bg-white px-6 py-32 lg:px-8">
-      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+      <div className="mx-auto max-w-3xl text-base leading-7 text-gray-800">
         <a
           href="/"
           className="flex text-base underline font-semibold leading-7 text-indigo-600"
@@ -23,7 +23,7 @@ export default function Policy() {
             store, use, and/or share (process) your information when you use our
             services (Services), such as when you:
           </p>
-          <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+          <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-800">
             <li className="flex gap-x-3">
               <CheckCircleIcon
                 className="mt-1 h-5 w-5 flex-none text-indigo-600"
