@@ -120,7 +120,7 @@ export default function Pricing() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? "bg-[#ff9a66] text-black shadow-sm hover:bg-[#f88bec] focus-visible:outline-[#f88bec]"
+                  ? "bg-[#f88bec] text-black shadow-sm hover:bg-[#f055de] focus-visible:outline-[#f88bec]"
                   : "text-gray-500 ring-1 ring-inset ring-gray-500 hover:ring-gray-600 focus-visible:outline-gray-600",
                 "mt-8 block tracking-wide rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10"
               )}
