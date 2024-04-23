@@ -40,7 +40,6 @@ const Hero = () => {
                 width={80}
                 height={14}
                 priority
-                className="h-auto"
               />
             </a>
           </div>
@@ -87,7 +86,7 @@ const Hero = () => {
               </a>
             </div>
             <p className="text-center text-sm sm:text-base mt-3 text-black italic">
-              Save 50% with early bird access
+              Save 50% with early bird discount
             </p>
           </div>
         </div>

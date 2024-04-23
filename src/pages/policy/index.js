@@ -4,7 +4,7 @@ import { CheckCircleIcon, ArrowLeftIcon } from "@heroicons/react/20/solid";
 
 export default function Policy() {
   return (
-    <div className="bg-white px-6 py-32 lg:px-8">
+    <div className="bg-[#f5f3ea] px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-800">
         <a
           href="/"
@@ -233,6 +233,23 @@ export default function Policy() {
             CCPA. In addition to the information in this clause, the User can
             find information regarding how to opt out of the sale in the section
             detailing the rights of Californian consumers.
+          </p>
+          <h3 className="text-2xl mt-12 font-bold tracking-tight text-gray-900 uppecase">
+            Personal information you disclose to use.{" "}
+          </h3>
+          <p className="mt-6">
+            In Short: We collect personal information that you provide to us. We
+            collect personal information that you voluntarily provide to us when
+            express an interest in obtaining information about us or our
+            products and Services, when you participate in activities on the
+            Services, or otherwise when you contact us. The personal information
+            that we collect depends on the context of your interactions with us
+            and the Services, the choices you make, and the products and
+            features you use. The personal information we collect may include
+            email addresses. We do not process sensitive information. All
+            personal information that you provide to us must be true, complete,
+            and accurate, and you must notify us of any changes to such
+            personal. Information. 
           </p>
         </div>
       </div>
