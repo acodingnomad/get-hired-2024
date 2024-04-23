@@ -65,7 +65,7 @@ export default function Content() {
           <div>
             <div className="text-base leading-7 text-gray-800 lg:max-w-lg">
               <h1 className="text-2xl font-bold tracking-tight  sm:text-4xl">
-                On a mission to empower aspiring developers
+                Everything you need to land your next job
               </h1>
               <div className="max-w-xl">
                 <div className="text-gray-900 mt-6">

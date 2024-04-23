@@ -1,8 +1,29 @@
 "use client"; // This is a client component 👈🏽
 
 import Image from "next/image";
+import React, { useState, useEffect, useRef } from "react";
 
-export default function Hero() {
+const Hero = () => {
+  const [load, setLoad] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setLoad(true);
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(videoRef.current);
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -19,6 +40,7 @@ export default function Hero() {
                 width={80}
                 height={14}
                 priority
+                className="h-auto"
               />
             </a>
           </div>
@@ -34,18 +56,27 @@ export default function Hero() {
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-800">
                 Learn how to make your resume stand out, ace interviews, and
-                beat the competition in this new{" "}
-                <span className="font-medium text-black">masterclass:</span>
+                beat the competition in my new{" "}
+                <span className="font-medium text-black underline">
+                  masterclass:
+                </span>
               </p>
             </div>
-            <div className="mt-10 sm:mt-10 m-auto flex justify-center">
-              <iframe
-                className="w-full md:w-2/3 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                src="https://www.youtube.com/embed/8bLtcn7l8pU?si=M3X80XC0scZg8jLC"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+            <div
+              ref={videoRef}
+              className="mt-10 sm:mt-10 m-auto flex justify-center"
+            >
+              {load ? (
+                <iframe
+                  className="w-full md:w-2/3 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                  src={`https://player.vimeo.com/video/937974998?h=d8c0de12c7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <div>Video Loading...</div>
+              )}
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -63,4 +94,5 @@ export default function Hero() {
       </div>
     </div>
   );
-}
+};
+export default Hero;
