@@ -1,8 +1,11 @@
 "use client"; // This is a client component 👈🏽
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const Newsletter = () => {
+  const [status, setStatus] = useState("");
+
   const {
     register,
     formState: { errors },
@@ -10,7 +13,39 @@ const Newsletter = () => {
   } = useForm({
     mode: "onBlur",
   });
-  const onSubmit = (data) => console.log("data", data);
+
+  const SUBSCRIBE_URL = `${process.env.CONVERTKIT_API_URL}/forms/${process.env.CONVERTKIT_FORM_ID}/subscribe`;
+
+  const onSubmit = async (data, e) => {
+    e.preventDefault();
+
+    const payload = JSON.stringify({
+      email: data.email,
+      api_key: process.env.CONVERTKIT_API_KEY,
+    });
+
+    try {
+      const response = await fetch(SUBSCRIBE_URL, {
+        method: "POST",
+        body: payload,
+        headers: {
+          Accept: "application/json; charset=utf-8",
+          "Content-Type": "application/json",
+        },
+      });
+
+      const json = await response.json();
+
+      if (json?.subscription?.id) {
+        setStatus("SUCCESS");
+        return;
+      }
+      setStatus("ERROR");
+    } catch (error) {
+      setStatus("ERROR");
+      console.error(error);
+    }
+  };
 
   return (
     <div className="sm:pb-24">
@@ -23,40 +58,52 @@ const Newsletter = () => {
             Sign up for my newsletter and join a community of aspiring Software
             Developers.
           </p>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="mx-auto mt-10 flex max-w-md gap-x-4"
-          >
-            <label htmlFor="email-address" className="sr-only">
-              Email address
-            </label>
-            <div className="w-full grid">
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-black focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-                {...register("email", {
-                  required: "Email Address is required",
-                })}
-              />
-              {errors.email && (
-                <p role="alert" className="text-red-600 mt-2 text-xs">
-                  {errors.email.message}
-                </p>
-              )}
-            </div>
-
-            {/* TODO: Integrade ConvertKit */}
-            <button
-              type="submit"
-              className="flex-none h-10 rounded-md bg-black text-white px-3.5 py-2.5 text-sm font-semiboldshadow-sm border-[1px] border-black hover:bg-[#f88bec] hover:text-black hover:border-[1px] hover:border-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          {status === "SUCCESS" ? (
+            <p className="mx-auto mt-10 max-w-xl text-center text-lg leading-8 text-green-800">
+              Please check your inbox to confirm the subscription!
+            </p>
+          ) : (
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="mx-auto mt-10 flex max-w-md gap-x-4"
             >
-              Notify me
-            </button>
-          </form>
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <div className="w-full grid">
+                <input
+                  id="email-address"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-black focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                  placeholder="Enter your email"
+                  {...register("email", {
+                    required: "Email Address is required",
+                    pattern:
+                      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                  })}
+                />
+                {errors.email && errors.email.type === "required" && (
+                  <p role="alert" className="text-red-600 mt-2 text-xs">
+                    {errors.email.message}
+                  </p>
+                )}
+                {errors.email && errors.email.type === "pattern" && (
+                  <p role="alert" className="text-red-600 mt-2 text-xs">
+                    Please enter a valid email
+                  </p>
+                )}
+              </div>
+
+              <button
+                type="submit"
+                className="flex-none h-10 rounded-md bg-black text-white px-3.5 py-2.5 text-sm font-semiboldshadow-sm border-[1px] border-black hover:bg-[#f88bec] hover:text-black hover:border-[1px] hover:border-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Notify me
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </div>
