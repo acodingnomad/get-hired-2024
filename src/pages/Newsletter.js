@@ -91,7 +91,7 @@ const Newsletter = () => {
                     })}
                   />
                   {errors.email && errors.email.type === "required" && (
-                    <p role="alert" className="text-red-600 mt-2 text-xs">
+                    <p role="alert" className="text-red-800 mt-2 text-sm">
                       {errors.email.message}
                     </p>
                   )}
