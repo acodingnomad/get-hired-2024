@@ -12,6 +12,11 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    CONVERTKIT_API_URL: process.env.CONVERTKIT_API_URL,
+    CONVERTKIT_API_KEY: process.env.CONVERTKIT_API_KEY,
+    CONVERTKIT_FORM_ID: process.env.CONVERTKIT_FORM_ID,
+  },
 };
 
 export default nextConfig;

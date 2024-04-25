@@ -59,7 +59,7 @@ const Newsletter = () => {
             Developers.
           </p>
           {status === "SUCCESS" ? (
-            <p className="mx-auto mt-10 max-w-xl text-center text-sm leading-8 text-green-800">
+            <p className="mx-auto mt-10 max-w-xl text-center leading-8 text-green-800">
               Please check your inbox to confirm the subscription!
             </p>
           ) : (
@@ -96,7 +96,7 @@ const Newsletter = () => {
                     </p>
                   )}
                   {errors.email && errors.email.type === "pattern" && (
-                    <p role="alert" className="text-red-600 mt-2 text-xs">
+                    <p role="alert" className="text-red-600 mt-2 text-sm">
                       Please enter a valid email
                     </p>
                   )}
