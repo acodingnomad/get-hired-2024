@@ -1,18 +1,17 @@
-/*
-	This example requires some changes to your config:
-	
-	```
-	// tailwind.config.js
-	module.exports = {
-		// ...
-		plugins: [
-			// ...
-			require('@tailwindcss/forms'),
-		],
-	}
-	```
-*/
-export default function Newsletter() {
+"use client"; // This is a client component 👈🏽
+
+import { useForm } from "react-hook-form";
+
+const Newsletter = () => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm({
+    mode: "onBlur",
+  });
+  const onSubmit = (data) => console.log("data", data);
+
   return (
     <div className="sm:pb-24">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -24,23 +23,36 @@ export default function Newsletter() {
             Sign up for my newsletter and join a community of aspiring Software
             Developers.
           </p>
-          <form className="mx-auto mt-10 flex max-w-md gap-x-4">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="mx-auto mt-10 flex max-w-md gap-x-4"
+          >
             <label htmlFor="email-address" className="sr-only">
               Email address
             </label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-black focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-              placeholder="Enter your email"
-            />
+            <div className="w-full grid">
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-black focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+                {...register("email", {
+                  required: "Email Address is required",
+                })}
+              />
+              {errors.email && (
+                <p role="alert" className="text-red-600 mt-2 text-xs">
+                  {errors.email.message}
+                </p>
+              )}
+            </div>
+
             {/* TODO: Integrade ConvertKit */}
             <button
               type="submit"
-              className="flex-none rounded-md bg-black text-white px-3.5 py-2.5 text-sm font-semiboldshadow-sm border-[1px] border-black hover:bg-[#f88bec] hover:text-black hover:border-[1px] hover:border-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="flex-none h-10 rounded-md bg-black text-white px-3.5 py-2.5 text-sm font-semiboldshadow-sm border-[1px] border-black hover:bg-[#f88bec] hover:text-black hover:border-[1px] hover:border-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Notify me
             </button>
@@ -49,4 +61,6 @@ export default function Newsletter() {
       </div>
     </div>
   );
-}
+};
+
+export default Newsletter;

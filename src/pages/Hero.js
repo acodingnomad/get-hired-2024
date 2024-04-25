@@ -54,8 +54,8 @@ const Hero = () => {
                 {`The Developer's Guide to Landing Your Next Job`}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-800">
-                Learn how to make your resume stand out, ace interviews, and
-                beat the competition in my new{" "}
+                Learn how to make your resume stand out and land more interviews
+                in my new{" "}
                 <span className="font-medium text-black underline">
                   masterclass:
                 </span>
@@ -67,14 +67,14 @@ const Hero = () => {
             >
               {load ? (
                 <iframe
-                  className="w-full md:w-2/3 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                  className="w-full md:w-3/4 aspect-video rounded-md shadow-2xl ring-1 ring-gray-900/10"
                   src={`https://player.vimeo.com/video/937974998?h=d8c0de12c7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
               ) : (
-                <div>Video Loading...</div>
+                <p className="text-black">Video Loading...</p>
               )}
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
