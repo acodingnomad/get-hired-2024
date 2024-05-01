@@ -10,8 +10,8 @@ const tiers = [
     features: [
       "3 Resume Templates",
       "Interview Prep Kit",
-      "Lifetime access",
-      "Free access to the Coding Nomad community",
+      "Lifetime access to the course",
+      "Access to the Coding Nomad community",
     ],
     featured: false,
   },
@@ -23,11 +23,11 @@ const tiers = [
     description:
       "Early bird access with a discounted price & special benefits.",
     features: [
-      "Opportunity to have a call with Coding Nomad",
+      "Opportunity to have a 1:1 call with Coding Nomad",
       "3 Resume Templates",
       "Interview Prep Kit",
-      "Lifetime access",
-      "Free access to the Coding Nomad community",
+      "Lifetime access to the course",
+      "Access to the Coding Nomad community",
     ],
     featured: true,
   },
