@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024"
+                href="https://sso.teachable.com/secure/2068689/checkout/5516828/get-hired-as-a-swe-in-2024"
                 className="rounded-md h-10 w-72 text-center bg-[#ff9a66] px-3.5 py-2.5 text-sm font-semibold text-black leading-tight hover:bg-black hover:text-white border-[1px] border-black shadow-[2px_2px_0px_0px_#000] hover:shadow-none"
               >
                 Sign up for $89

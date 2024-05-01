@@ -4,7 +4,7 @@ const tiers = [
   {
     name: "Full Price",
     id: "tier-full",
-    href: "https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024",
+    href: "https://sso.teachable.com/secure/2068689/checkout/5516828/get-hired-as-a-swe-in-2024",
     priceMonthly: "$169",
     description: "Final price of the course once all modules are released.",
     features: [
@@ -18,7 +18,7 @@ const tiers = [
   {
     name: "Early access",
     id: "tier-early-bird",
-    href: "https://sso.teachable.com/secure/1657556/checkout/5430071/get-hired-as-a-swe-in-2024",
+    href: "https://sso.teachable.com/secure/2068689/checkout/5516828/get-hired-as-a-swe-in-2024",
     priceMonthly: "$84",
     description:
       "Early bird access with a discounted price & special benefits.",
