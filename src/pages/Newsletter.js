@@ -52,7 +52,7 @@ const Newsletter = () => {
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="bg-[#a8ebff] border-[1px] border-black relative isolate overflow-hidde px-6 py-24 sm:rounded-3xl sm:px-24">
           <h2 className="mx-auto max-w-2xl text-center text-2xl font-bold tracking-tight text-black sm:text-4xl">
-            Get notified with the course updates 👩‍💻
+            Get notified with course updates 👩‍💻
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-black">
             Sign up for my newsletter and join a community of aspiring Software

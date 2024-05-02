@@ -23,7 +23,7 @@ const tiers = [
     description:
       "Early bird access with a discounted price & special benefits.",
     features: [
-      "Opportunity to have a 1:1 call with Coding Nomad",
+      "1:1 call with Coding Nomad (limited availability)",
       "3 Resume Templates",
       "Interview Prep Kit",
       "Lifetime access to the course",

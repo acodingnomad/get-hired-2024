@@ -9,24 +9,24 @@ const faqs = [
     answer: `This course is designed for aspiring software developers, whether you're fresh out of a coding bootcamp, a recent computer science graduate, or self-taught, looking to land your first job in the tech industry. If you want to improve your resume, portfolio, and interview skills to secure more job interviews and offers, this course is for you.`,
   },
   {
-    question: "Does this course teaches how to code?",
+    question: "Does this course teach coding skills?",
     answer: `No, this course doesn't teach coding skills.`,
   },
   {
     question: "What will I learn in this course?",
-    answer: `You'll learn how to create a compelling resume and portfolio that stands out to tech recruiters and hiring managers. We'll also cover essential interview preparation techniques, ensuring you're fully equipped to impress in any interview scenario.`,
+    answer: `You'll learn how to create a compelling resume and portfolio that stands out to tech recruiters and hiring managers. We will also cover essential interview preparation techniques, ensuring you're fully equipped to impress in any interview scenario.`,
   },
   {
     question: "How long does the course take to complete?",
-    answer: `The course is self-paced, but most students complete it within 4 to 6 weeks, dedicating a few hours each week to watch the videos and complete homework.`,
+    answer: `The course is self-paced, but most students complete it within 4 to 6 weeks, dedicating a few hours each week to watch the videos and complete the homework.`,
   },
   {
     question: "Do I need any prior experience before taking this course?",
-    answer: `While no specific prior experience is required, it's beneficial to have a basic understanding of software development principles and some coding experience to make the most of the course content, especially for portfolio development and technical interviews.`,
+    answer: `While no specific prior experience is necessary, it's beneficial to have a basic understanding of software development principles and some coding experience to make the most of the course content, especially for portfolio development and technical interviews.`,
   },
   {
     question: `What’s the refund policy?`,
-    answer: `If you don't think it was worth it, contact me within the first 30 days and I will provide a full refund.`,
+    answer: `If you don't think it was worth it, contact me within the first 14 days and I will provide a full refund.`,
   },
 ];
 
