@@ -23,7 +23,7 @@ const faqs = [
     question: "Module 3: Writing a great resume",
     available: true,
     answer:
-      "Learn what to put on your resume as a beginner to get invited to more interviews",
+      "Create an effective resume (even as a beginner with little to no experience) to get more interviews",
     plus: "to land more interviews 📄",
   },
   {

@@ -2,19 +2,19 @@ const features = [
   {
     name: "Perfect your resume, GitHub, and LinkedIn",
     description:
-      "Learn how to write an effective resume (even as a beginner without experience), optimize your GitHub and LinkedIn to land more interviews.",
+      "Learn how to write an effective resume (even as a beginner with no experience), and optimize your GitHub and LinkedIn to land more interviews.",
     number: "1",
   },
   {
     name: "Build real-life projects for your portfolio",
     description:
-      "Learn what projects to build to stand out, enhance your experience and propell your career.",
+      "Learn what projects to build to stand out, enhance your experience, and propel your career.",
     number: "2",
   },
   {
     name: "Land more interviews",
     description:
-      "Master latest networking & job application tactics to get invited to more interviews and build your connections.",
+      "Master the latest networking & job application tactics to get invited to more interviews and build your connections.",
     number: "3",
   },
   {

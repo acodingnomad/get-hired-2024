@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: `What’s the refund policy?`,
-    answer: `If you don't think it was worth it, contact me within the first 14 days and I will provide a full refund.`,
+    answer: `No refunds are provided for pre-sale purchases. For the full price, you can request a refund within 14 days from the date of purchase.`,
   },
 ];
 

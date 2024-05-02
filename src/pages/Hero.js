@@ -54,8 +54,7 @@ const Hero = () => {
                 {`The Developer's Guide to Landing Your Next Job`}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-800">
-                Learn how to make your resume stand out and land more interviews
-                in my new{" "}
+                Make your resume stand out and land more interviews in my new{" "}
                 <span className="font-medium text-black underline">
                   masterclass:
                 </span>
