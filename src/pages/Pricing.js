@@ -115,6 +115,11 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
+            {tier.featured && (
+              <p className="text-xs text-gray-300 mt-5">
+                The first three modules are coming by May 31st*
+              </p>
+            )}
             <a
               href={tier.href}
               aria-describedby={tier.id}
